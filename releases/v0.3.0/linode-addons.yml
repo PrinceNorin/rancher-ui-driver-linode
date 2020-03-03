@@ -42,6 +42,7 @@ spec:
         # The CCM can run on Nodes tainted as masters
         - key: "node-role.kubernetes.io/controlplane"
           effect: "NoSchedule"
+          value: "true"
         # The CCM is a "critical addon"
         - key: "CriticalAddonsOnly"
           operator: "Exists"
